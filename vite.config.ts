@@ -5,6 +5,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/Wrapes-code/',
+  // GitHub Pages serves this project under /Wrapes-code/; Render serves it at /
+  base: process.env.GITHUB_ACTIONS === 'true' ? '/Wrapes-code/' : '/',
   plugins: [vue(), tailwindcss()],
 })
