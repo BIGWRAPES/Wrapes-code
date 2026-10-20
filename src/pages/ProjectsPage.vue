@@ -22,7 +22,7 @@ const projects = [
     status: 'Learning concept',
   },
 ]
-const skills = ['Vue 3', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'Tailwind CSS', 'Supabase', 'React Native (learning)', 'Expo (learning)']
+const skills = ['Vue 3', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'Tailwind CSS', 'Supabase', 'React Native', 'Expo']
 </script>
 
 <template>
