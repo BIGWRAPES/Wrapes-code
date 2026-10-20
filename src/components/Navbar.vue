@@ -12,6 +12,7 @@ const links = [
   { label: 'Projects', href: '/projects' },
   { label: 'Contact', href: '/contact' },
 ]
+const resumeHref = `${import.meta.env.BASE_URL}resume.pdf`
 </script>
 
 <template>
@@ -33,6 +34,7 @@ const links = [
           {{ link.label }}
           <span v-if="currentPath === link.href" class="absolute inset-x-3 bottom-0 h-0.5 rounded-full bg-emerald-400" aria-hidden="true"></span>
         </a>
+        <a :href="resumeHref" download="Okwu-Prosper-Resume.pdf" class="rounded-lg border border-emerald-400/40 px-4 py-2.5 text-sm font-semibold text-emerald-200 transition hover:bg-emerald-400/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-300">Resume</a>
         <a href="/contact" class="rounded-lg bg-emerald-400 px-4 py-2.5 text-sm font-semibold text-zinc-950 transition hover:bg-emerald-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-300">Let's talk</a>
       </div>
       <button type="button" class="rounded-lg border border-white/15 px-3 py-2 text-sm text-zinc-200 md:hidden" :aria-expanded="menuOpen" aria-controls="mobile-menu" @click="menuOpen = !menuOpen">
@@ -51,6 +53,7 @@ const links = [
           :aria-current="currentPath === link.href ? 'page' : undefined"
           @click="menuOpen = false"
         >{{ link.label }}</a>
+        <a :href="resumeHref" download="Okwu-Prosper-Resume.pdf" class="rounded-lg border-l-2 border-transparent px-3 py-3 text-sm text-emerald-200 transition hover:bg-emerald-400/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-emerald-400">Download resume (PDF)</a>
       </div>
     </div>
   </header>

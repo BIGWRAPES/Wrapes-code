@@ -1,0 +1,75 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Length 3551 >>
+stream
+0.91 0.96 0.94 rg 0 0 612 792 re f
+1 1 1 rg 36 34 540 724 re f
+0.02 0.47 0.38 rg 36 704 540 54 re f
+BT /F2 23 Tf 1 1 1 rg 1 0 0 1 52 731 Tm (Okwu Prosper) Tj ET
+BT /F2 9 Tf 0.80 0.94 0.89 rg 1 0 0 1 53 715 Tm (FRONT-END DEVELOPER) Tj ET
+BT /F1 9 Tf 0.34 0.39 0.43 rg 1 0 0 1 52 688 Tm (okwup910@gmail.com   |   wrapes-code.onrender.com) Tj ET
+BT /F1 9 Tf 0.34 0.39 0.43 rg 1 0 0 1 52 674 Tm (bigwrapes-pixel.online) Tj ET
+BT /F2 9 Tf 0.02 0.47 0.38 rg 1 0 0 1 48 650 Tm (PROFESSIONAL SUMMARY) Tj ET
+0.84 0.88 0.87 RG 0.7 w 48 643 m 564 643 l S
+BT /F1 9.5 Tf 0.34 0.39 0.43 rg 1 0 0 1 48 632 Tm (Front-End Developer and Chemistry Education student who builds web projects with Vue 3, Vite,) Tj ET
+BT /F1 9.5 Tf 0.34 0.39 0.43 rg 1 0 0 1 48 619.5 Tm (JavaScript, Tailwind CSS, HTML, and CSS. Created Bigwrapes Pixel, a live showcase helping student) Tj ET
+BT /F1 9.5 Tf 0.34 0.39 0.43 rg 1 0 0 1 48 607 Tm (entrepreneurs present their businesses and products to customers. Also works with Node.js and Supabase) Tj ET
+BT /F1 9.5 Tf 0.34 0.39 0.43 rg 1 0 0 1 48 594.5 Tm (database handling.) Tj ET
+BT /F2 9 Tf 0.02 0.47 0.38 rg 1 0 0 1 48 580 Tm (TECHNICAL SKILLS) Tj ET
+0.84 0.88 0.87 RG 0.7 w 48 573 m 564 573 l S
+BT /F2 9.5 Tf 0.10 0.14 0.18 rg 1 0 0 1 48 562 Tm (Front end) Tj ET
+BT /F1 9.5 Tf 0.34 0.39 0.43 rg 1 0 0 1 130 562 Tm (Vue 3, Vite, JavaScript \(ES6+\), Tailwind CSS, HTML5, CSS3) Tj ET
+BT /F2 9.5 Tf 0.10 0.14 0.18 rg 1 0 0 1 48 547 Tm (Backend & data) Tj ET
+BT /F1 9.5 Tf 0.34 0.39 0.43 rg 1 0 0 1 130 547 Tm (Node.js, Supabase, database handling) Tj ET
+BT /F2 9.5 Tf 0.10 0.14 0.18 rg 1 0 0 1 48 532 Tm (Tools) Tj ET
+BT /F1 9.5 Tf 0.34 0.39 0.43 rg 1 0 0 1 130 532 Tm (Git, GitHub, VS Code, browser developer tools) Tj ET
+BT /F2 9 Tf 0.02 0.47 0.38 rg 1 0 0 1 48 505 Tm (SELECTED PROJECT) Tj ET
+0.84 0.88 0.87 RG 0.7 w 48 498 m 564 498 l S
+BT /F2 11 Tf 0.10 0.14 0.18 rg 1 0 0 1 48 486 Tm (Bigwrapes Pixel - Creator and Developer) Tj ET
+BT /F1 9 Tf 0.02 0.47 0.38 rg 1 0 0 1 48 471 Tm (Live student-business showcase  |  bigwrapes-pixel.online) Tj ET
+BT /F1 9.5 Tf 0.34 0.39 0.43 rg 1 0 0 1 58 451 Tm (Built and launched a platform where student entrepreneurs can showcase their businesses and) Tj ET
+BT /F1 9.5 Tf 0.34 0.39 0.43 rg 1 0 0 1 58 438.5 Tm (products, helping customers discover what they offer.) Tj ET
+BT /F1 9.5 Tf 0.34 0.39 0.43 rg 1 0 0 1 58 425 Tm (Technology: HTML, CSS, JavaScript, and Supabase.) Tj ET
+BT /F2 9 Tf 0.02 0.47 0.38 rg 1 0 0 1 48 395 Tm (EDUCATION & PROFESSIONAL DEVELOPMENT) Tj ET
+0.84 0.88 0.87 RG 0.7 w 48 388 m 564 388 l S
+BT /F2 10 Tf 0.10 0.14 0.18 rg 1 0 0 1 48 376 Tm (Bachelor's studies in Chemistry Education - In progress) Tj ET
+BT /F1 9.2 Tf 0.34 0.39 0.43 rg 1 0 0 1 48 361 Tm (Building analytical, research, communication, and problem-solving skills.) Tj ET
+BT /F2 10 Tf 0.10 0.14 0.18 rg 1 0 0 1 48 341 Tm (Software Engineering studies - Udemy, In progress) Tj ET
+BT /F1 9.2 Tf 0.34 0.39 0.43 rg 1 0 0 1 48 326 Tm (Coursework in software development, programming practices, and workflows.) Tj ET
+BT /F2 9 Tf 0.02 0.47 0.38 rg 1 0 0 1 48 295 Tm (CERTIFICATION) Tj ET
+0.84 0.88 0.87 RG 0.7 w 48 288 m 564 288 l S
+BT /F2 10 Tf 0.10 0.14 0.18 rg 1 0 0 1 48 276 Tm (Modern JavaScript Developer Certification - freeCodeCamp) Tj ET
+BT /F2 9 Tf 0.02 0.47 0.38 rg 1 0 0 1 48 248 Tm (STRENGTHS) Tj ET
+0.84 0.88 0.87 RG 0.7 w 48 241 m 564 241 l S
+BT /F1 9 Tf 0.34 0.39 0.43 rg 1 0 0 1 48 229 Tm (Problem solving  |  Critical thinking  |  Communication  |  Adaptability  |  Attention to detail) Tj ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000000348 00000 n 
+0000000450 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+4053
+%%EOF
