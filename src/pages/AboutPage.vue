@@ -14,7 +14,7 @@ transparentLogo.then((src) => { logoSrc.value = src })
           <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1.5 text-xs text-zinc-300 sm:text-sm">Scripting &amp; Automation</span>
           <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1.5 text-xs text-zinc-300 sm:text-sm">Database Architecture</span>
         </div>
-        <h1 class="max-w-3xl text-5xl font-semibold leading-[1.02] tracking-[-0.055em] text-white sm:text-6xl lg:text-7xl xl:text-8xl">Okw Prosper<span class="text-emerald-400">.</span></h1>
+        <h1 class="max-w-3xl text-5xl font-semibold leading-[1.02] tracking-[-0.055em] text-white sm:text-6xl lg:text-7xl xl:text-8xl">Okwu Prosper<span class="text-emerald-400">.</span></h1>
         <p class="mt-5 text-xl font-medium tracking-tight text-zinc-200 sm:text-2xl lg:text-3xl">Full-Stack Developer <span class="px-1 text-emerald-400" aria-hidden="true">/</span> <span class="text-emerald-300">JavaScript Specialist</span></p>
         <p class="mt-6 max-w-2xl text-base leading-7 text-zinc-400 sm:text-lg sm:leading-8">I build exceptional, highly optimized digital experiences. I’m currently architecting platforms that empower early-stage ventures and help modern business ecosystems scale.</p>
         <div class="mt-8 flex flex-wrap gap-3">
