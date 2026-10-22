@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bigwrapes.github.io/Wrapes-code/sitemap.xml
+Sitemap: https://wrapes-code.onrender.com/sitemap.xml
