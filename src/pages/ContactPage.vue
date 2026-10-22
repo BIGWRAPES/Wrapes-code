@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { linkedinUrl } from '../config/contact'
+import { routeHref } from '../utils/routes'
 </script>
 
 <template>
@@ -24,7 +25,7 @@ import { linkedinUrl } from '../config/contact'
           <li class="flex gap-3"><span class="text-emerald-400" aria-hidden="true">02</span><span>What you're looking to build or discuss</span></li>
           <li class="flex gap-3"><span class="text-emerald-400" aria-hidden="true">03</span><span>Any timeline or details I should know</span></li>
         </ul>
-        <a href="/projects" class="mt-7 inline-flex text-sm font-medium text-emerald-300 hover:text-emerald-200">View my work <span class="ml-2" aria-hidden="true">→</span></a>
+        <a :href="routeHref('/projects')" class="mt-7 inline-flex text-sm font-medium text-emerald-300 hover:text-emerald-200">View my work <span class="ml-2" aria-hidden="true">→</span></a>
       </aside>
     </div>
   </div>

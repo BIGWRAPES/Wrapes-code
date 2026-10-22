@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { transparentLogo } from '../utils/logo'
+import { routeHref } from '../utils/routes'
 const logoSrc = ref('')
 transparentLogo.then((src) => { logoSrc.value = src })
 </script>
@@ -18,8 +19,8 @@ transparentLogo.then((src) => { logoSrc.value = src })
         <p class="mt-5 text-xl font-medium tracking-tight text-zinc-200 sm:text-2xl lg:text-3xl">Full-Stack Developer <span class="px-1 text-emerald-400" aria-hidden="true">/</span> <span class="text-emerald-300">JavaScript Specialist</span></p>
         <p class="mt-6 max-w-2xl text-base leading-7 text-zinc-400 sm:text-lg sm:leading-8">I build exceptional, highly optimized digital experiences. I’m currently architecting platforms that empower early-stage ventures and help modern business ecosystems scale.</p>
         <div class="mt-8 flex flex-wrap gap-3">
-          <a href="/projects" class="rounded-lg bg-emerald-400 px-5 py-3 text-sm font-semibold text-zinc-950 transition hover:bg-emerald-300">See my projects <span aria-hidden="true">→</span></a>
-          <a href="/contact" class="rounded-lg border border-white/15 px-5 py-3 text-sm font-semibold text-white transition hover:border-emerald-400/60 hover:text-emerald-300">Let's talk</a>
+          <a :href="routeHref('/projects')" class="rounded-lg bg-emerald-400 px-5 py-3 text-sm font-semibold text-zinc-950 transition hover:bg-emerald-300">See my projects <span aria-hidden="true">→</span></a>
+          <a :href="routeHref('/contact')" class="rounded-lg border border-white/15 px-5 py-3 text-sm font-semibold text-white transition hover:border-emerald-400/60 hover:text-emerald-300">Let's talk</a>
         </div>
         <p class="mt-7 text-sm text-zinc-500">Open to collaborations, freelance projects, teaching opportunities, and career opportunities.</p>
       </div>
@@ -71,7 +72,7 @@ transparentLogo.then((src) => { logoSrc.value = src })
             My portfolio consists of production-grade systems, automated internal tools, 
             and modular components engineered for scalability, 
             clean code, and fast performance.</p>
-          <a href="/projects" class="inline-flex items-center gap-2 pt-2 text-sm font-medium text-emerald-300 hover:text-emerald-200">Explore the projects <span aria-hidden="true">→</span></a>
+          <a :href="routeHref('/projects')" class="inline-flex items-center gap-2 pt-2 text-sm font-medium text-emerald-300 hover:text-emerald-200">Explore the projects <span aria-hidden="true">→</span></a>
         </div>
       </div>
     </section>

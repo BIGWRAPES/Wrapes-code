@@ -5,8 +5,9 @@ import ContactPage from './pages/ContactPage.vue'
 import AboutPage from './pages/AboutPage.vue'
 import ProjectsPage from './pages/ProjectsPage.vue'
 import ChatWidget from './components/ChatWidget.vue'
+import { routeFromPathname, routeHref } from './utils/routes'
 
-const currentPath = ref(window.location.pathname.replace(/\/$/, '') || '/')
+const currentPath = ref(routeFromPathname(window.location.pathname))
 const titles: Record<string, string> = {
   '/': 'About',
   '/projects': 'Projects',
@@ -25,17 +26,17 @@ function updateMetadata(path: string) {
 }
 
 function onPopState() {
-  currentPath.value = window.location.pathname.replace(/\/$/, '') || '/'
+  currentPath.value = routeFromPathname(window.location.pathname)
   updateMetadata(currentPath.value)
 }
 
 function onNavigate(event: MouseEvent) {
   const anchor = (event.target as HTMLElement).closest('a')
   if (!anchor || anchor.target === '_blank' || anchor.origin !== window.location.origin) return
-  const path = anchor.pathname.replace(/\/$/, '') || '/'
+  const path = routeFromPathname(anchor.pathname)
   if (!titles[path]) return
   event.preventDefault()
-  window.history.pushState({}, '', path)
+  window.history.pushState({}, '', routeHref(path))
   currentPath.value = path
   updateMetadata(path)
   window.scrollTo({ top: 0, behavior: 'smooth' })

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bigwrapes.github.io/Wrapes-code/sitemap.xml
