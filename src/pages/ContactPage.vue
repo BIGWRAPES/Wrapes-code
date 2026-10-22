@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import { linkedinUrl } from '../config/contact'
+</script>
+
 <template>
   <div class="mx-auto flex min-h-[calc(100svh-150px)] max-w-6xl flex-col justify-center px-5 py-16 sm:px-6 sm:py-24">
     <div class="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
@@ -8,6 +12,9 @@
         <p class="mt-4 text-sm text-zinc-500">Use the “Let's talk” chat button at the bottom right to start a WhatsApp message, or email me directly.</p>
         <a href="mailto:okwup910@gmail.com" class="mt-5 inline-flex items-center gap-2 text-sm font-medium text-emerald-300 transition hover:text-emerald-200">
           okwup910@gmail.com <span aria-hidden="true">↗</span>
+        </a>
+        <a :href="linkedinUrl" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center gap-2 text-sm font-medium text-emerald-300 transition hover:text-emerald-200">
+          Connect on LinkedIn <span aria-hidden="true">↗</span>
         </a>
       </div>
       <aside class="rounded-2xl border border-white/10 bg-zinc-900/60 p-6 sm:p-8">
