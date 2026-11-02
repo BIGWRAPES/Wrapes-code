@@ -36,6 +36,17 @@ jobs:
         run: npm run build
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
+      - name: Set GitHub Pages deployment source
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          curl --fail-with-body --silent --show-error \
+            --request PUT \
+            --header "Accept: application/vnd.github+json" \
+            --header "Authorization: Bearer $GH_TOKEN" \
+            --header "X-GitHub-Api-Version: 2022-11-28" \
+            --data '{"build_type":"workflow"}' \
+            "https://api.github.com/repos/${GITHUB_REPOSITORY}/pages"
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
