@@ -6,6 +6,7 @@ import { routeHref } from '../utils/routes'
 defineProps<{ currentPath: string }>()
 
 const menuOpen = ref(false)
+const resumeDialog = ref<HTMLDialogElement | null>(null)
 const logoSrc = ref('')
 transparentLogo.then((src) => { logoSrc.value = src })
 const links = [
@@ -14,6 +15,14 @@ const links = [
   { label: 'Contact', path: '/contact', href: routeHref('/contact') },
 ]
 const resumeHref = `${import.meta.env.BASE_URL}resume.pdf`
+
+function openResumeDialog() {
+  resumeDialog.value?.showModal()
+}
+
+function closeResumeDialog() {
+  resumeDialog.value?.close()
+}
 </script>
 
 <template>
@@ -35,7 +44,7 @@ const resumeHref = `${import.meta.env.BASE_URL}resume.pdf`
           {{ link.label }}
           <span v-if="currentPath === link.href" class="absolute inset-x-3 bottom-0 h-0.5 rounded-full bg-emerald-400" aria-hidden="true"></span>
         </a>
-        <a :href="resumeHref" download="Okwu-Prosper-Resume.pdf" class="rounded-lg border border-emerald-400/40 px-4 py-2.5 text-sm font-semibold text-emerald-200 transition hover:bg-emerald-400/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-300">Resume</a>
+        <button type="button" class="rounded-lg border border-emerald-400/40 px-4 py-2.5 text-sm font-semibold text-emerald-200 transition hover:bg-emerald-400/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-300" @click="openResumeDialog">Resume</button>
         <a :href="routeHref('/contact')" class="rounded-lg bg-emerald-400 px-4 py-2.5 text-sm font-semibold text-zinc-950 transition hover:bg-emerald-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-300">Let's talk</a>
       </div>
       <button type="button" class="rounded-lg border border-white/15 px-3 py-2 text-sm text-zinc-200 md:hidden" :aria-expanded="menuOpen" aria-controls="mobile-menu" @click="menuOpen = !menuOpen">
@@ -54,8 +63,37 @@ const resumeHref = `${import.meta.env.BASE_URL}resume.pdf`
           :aria-current="currentPath === link.path ? 'page' : undefined"
           @click="menuOpen = false"
         >{{ link.label }}</a>
-        <a :href="resumeHref" download="Okwu-Prosper-Resume.pdf" class="rounded-lg border-l-2 border-transparent px-3 py-3 text-sm text-emerald-200 transition hover:bg-emerald-400/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-emerald-400">Download resume (PDF)</a>
+        <button type="button" class="rounded-lg border-l-2 border-transparent px-3 py-3 text-left text-sm text-emerald-200 transition hover:bg-emerald-400/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-emerald-400" @click="openResumeDialog">Resume</button>
       </div>
     </div>
+    <dialog
+      ref="resumeDialog"
+      aria-labelledby="resume-dialog-title"
+      aria-describedby="resume-dialog-description"
+      class="m-auto w-[min(24rem,calc(100vw-2rem))] rounded-2xl border border-white/10 bg-zinc-900 p-6 text-zinc-100 shadow-2xl shadow-black/60 backdrop:bg-black/70"
+    >
+      <div class="flex items-start justify-between gap-4">
+        <div>
+          <h2 id="resume-dialog-title" class="text-lg font-semibold text-white">Resume</h2>
+          <p id="resume-dialog-description" class="mt-1 text-sm leading-6 text-zinc-400">Would you like to view the resume or download a copy?</p>
+        </div>
+        <button type="button" class="rounded-lg p-2 text-zinc-400 transition hover:bg-white/5 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-emerald-400" aria-label="Close resume options" @click="closeResumeDialog">✕</button>
+      </div>
+      <div class="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-end">
+        <a
+          :href="resumeHref"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="rounded-lg border border-white/15 px-4 py-2.5 text-center text-sm font-semibold text-white transition hover:border-emerald-400/60 hover:text-emerald-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-emerald-400"
+          @click="closeResumeDialog"
+        >View resume</a>
+        <a
+          :href="resumeHref"
+          download="Okwu-Prosper-Resume.pdf"
+          class="rounded-lg bg-emerald-400 px-4 py-2.5 text-center text-sm font-semibold text-zinc-950 transition hover:bg-emerald-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-emerald-300"
+          @click="closeResumeDialog"
+        >Download resume</a>
+      </div>
+    </dialog>
   </header>
 </template>

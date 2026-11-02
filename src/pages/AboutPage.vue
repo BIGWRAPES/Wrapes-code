@@ -17,7 +17,7 @@ transparentLogo.then((src) => { logoSrc.value = src })
         </div>
         <h1 class="max-w-3xl text-5xl font-semibold leading-[1.02] tracking-[-0.055em] text-white sm:text-6xl lg:text-7xl xl:text-8xl">Okwu Prosper<span class="text-emerald-400">.</span></h1>
         <p class="mt-5 text-xl font-medium tracking-tight text-zinc-200 sm:text-2xl lg:text-3xl">Full-Stack Developer <span class="px-1 text-emerald-400" aria-hidden="true">/</span> <span class="text-emerald-300">JavaScript Specialist</span></p>
-        <p class="mt-6 max-w-2xl text-base leading-7 text-zinc-400 sm:text-lg sm:leading-8">I build exceptional, highly optimized digital experiences. I’m currently architecting platforms that empower early-stage ventures and help modern business ecosystems scale.</p>
+        <p class="mt-6 max-w-2xl text-base leading-7 text-zinc-400 sm:text-lg sm:leading-8">I build custom, high-performance web and mobile solutions that help startups connect with their customers and teams. Using technologies like Vue 3, TypeScript, JavaScript, Tailwind CSS, and Supabase, I turn ideas into practical digital products. I’m currently developing Bigwrapes Pixel, a platform where student entrepreneurs can showcase their businesses and reach more customers.</p>
         <div class="mt-8 flex flex-wrap gap-3">
           <a :href="routeHref('/projects')" class="rounded-lg bg-emerald-400 px-5 py-3 text-sm font-semibold text-zinc-950 transition hover:bg-emerald-300">See my projects <span aria-hidden="true">→</span></a>
           <a :href="routeHref('/contact')" class="rounded-lg border border-white/15 px-5 py-3 text-sm font-semibold text-white transition hover:border-emerald-400/60 hover:text-emerald-300">Let's talk</a>
@@ -63,15 +63,8 @@ transparentLogo.then((src) => { logoSrc.value = src })
       <div class="mt-4 grid gap-8 md:grid-cols-[0.8fr_1.2fr] md:gap-16">
         <h2 class="section-title">Curious by nature.<br />A Developer with Creativity.</h2>
         <div class="space-y-4 text-sm leading-7 text-zinc-400 sm:text-base">
-          <p>Full-stack engineer specializing in cross-platform web and mobile development. 
-            I focus on bridging the gap between complex engineering architectures and 
-            seamless user experiences, 
-            taking products from initial concept to optimized production..</p>
-          <p>I am currently developing Bigwrapes Pixel, 
-            an ecosystem platform designed to showcase student-led innovations to active business networks. 
-            My portfolio consists of production-grade systems, automated internal tools, 
-            and modular components engineered for scalability, 
-            clean code, and fast performance.</p>
+          <p>I’m passionate about connecting businesses with their customers and teams. As a full-stack developer, I build custom web and mobile solutions for startups, taking ideas from concept to polished, user-friendly products.</p>
+          <p>I’m currently developing Bigwrapes Pixel, a platform that helps student entrepreneurs showcase their businesses and reach potential customers. My work includes projects built with Vue 3, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, Supabase, React Native, and Expo.</p>
           <a :href="routeHref('/projects')" class="inline-flex items-center gap-2 pt-2 text-sm font-medium text-emerald-300 hover:text-emerald-200">Explore the projects <span aria-hidden="true">→</span></a>
         </div>
       </div>
